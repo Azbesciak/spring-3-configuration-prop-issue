@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono
 @RestController
 class MyServiceC(val someBean: SomeBean) {
     init {
-        println("SERVICE C")
+        println("SERVICE C: ${someBean.customValue}")
     }
     @GetMapping
     fun getIt() = Mono.just(someBean.customValue)
