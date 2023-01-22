@@ -1,0 +1,8 @@
+
+my-service: c
+my-service.custom-value: property is set
+my-service.my-props:
+  - name: prop1
+    values:
+      - Value1
+      - Value2
